@@ -1,3 +1,14 @@
 machine:
   node:
     version: 0.10.22
+
+test:
+  pre:
+    - git clone git@github.com:mojotech/pioneer-todo-mvc.git
+    - cd pioneer-todo-mvc
+    - npm install
+    - cd ..
+
+  override:
+    - ./detect_changes.sh
+    - ./pioneer-todo-mvc/runner.sh
