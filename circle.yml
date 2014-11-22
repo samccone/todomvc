@@ -1,0 +1,18 @@
+machine:
+  node:
+    version: 0.10.22
+
+dependencies:
+  override:
+    - echo "nothing to install here :)"
+
+test:
+  pre:
+    - git clone git@github.com:mojotech/pioneer-todo-mvc.git
+
+  override:
+    - P=$(./detect_changes.sh)
+    - eval "cd ${P}" && python -m SimpleHTTPServer:
+      background: true
+    - cd pioneer-todo-mvc && npm install
+    - cd pioneer-todo-mvc && ./node_modules/.bin/pioneer --format=todo_formatter.js --error_formatter=todo_error.js --urlPath=http://localhost:8000
