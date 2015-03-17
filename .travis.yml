@@ -8,8 +8,12 @@ node_js:
     - '0.12'
 notifications:
     irc: 'irc.freenode.org#tastejs'
+addons:
+    sauce_connect: true
 env:
     global:
+        - secure: K1WJRK2WTcc8+ZVGfwgOR8dBSM3VqJXNzcFpRPbEd48kVikx6nKYhrSffyl8a5QM5+Z7UP1TrmRAmOwR09Qp7Lh2Ch7vE9ooK9gk3XsoUP454aWm35NzjqagyajzGe7disCf6nWxgPZ0lgNkCG18aBfyh9FlUryzGzRyiSqeVeQ=
+        - secure: Or0NreVqcSIE6lbmSe3TmeXlm/++hXZAN9LVozvwlRLrE2jevIYRWD6arep9RTACtiQOPLrLrMh1/KDlIMgSfdrSa/w72J+YchSrYm+d06p4BcHPZEDnooiktTx4e9nL/5MfxIUYNOF0iT+wReRxId0INukqIUvjKB4F/X7MgmE=
         # GH_OAUTH_TOKEN is the oauth token generated as described at
         # https://help.github.com/articles/creating-an-oauth-token-for-command-line-use
         #
@@ -28,8 +32,9 @@ env:
 before_script:
     # install dependencies
     - npm install -g gulp
+    - python -m SimpleHTTPServer &
+    - sleep 2
 script:
     # We want to gate on passing tests and a successful build
     - gulp
-after_success:
     - ./travis-runner.sh
