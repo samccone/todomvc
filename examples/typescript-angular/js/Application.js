@@ -45,6 +45,7 @@ var todos;
         return {
             link: function ($scope, element, attributes) {
                 element.bind('blur', function () { $scope.$apply(attributes.todoBlur); });
+                $scope.$on('$destory', function () { element.unbind('blur'); });
             }
         };
     }
