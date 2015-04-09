@@ -200,6 +200,40 @@
 			}]
 		}]
 	},
+	"aurelia": {
+		"name": "Aurelia",
+		"description": "Aurelia is a next generation JavaScript client framework that leverages simple conventions to empower your creativity.",
+		"homepage": "aurelia.io",
+		"examples": [{
+			"name": "Example",
+			"url": "examples/aurelia"
+		}],
+		"link_groups": [{
+			"heading": "Official Resources",
+			"links": [{
+				"name": "Get started",
+				"url": "http://aurelia.io/get-started.html"
+			}, {
+				"name": "Docs",
+				"url": "http://aurelia.io/docs.html"
+			}, {
+				"name": "Aurelia on GitHub",
+				"url": "https://github.com/aurelia"
+			}]
+		}, {
+			"heading": "Articles and Guides",
+			"links": [{
+				"name": "Blog",
+				"url": "http://blog.durandal.io/"
+			}]
+		}, {
+			"heading": "Community",
+			"links": [{
+				"name": "Aurelia dicussions on Gitter",
+				"url": "https://gitter.im/Aurelia/Discuss"
+			}]
+		}]
+	},
 	"backbonejs": {
 		"name": "Backbone.js",
 		"description": "Backbone.js gives structure to web applications by providing models with key-value binding and custom events, collections with a rich API of enumerable functions, views with declarative event handling, and connects it all to your existing API over a RESTful JSON interface.",
@@ -317,55 +351,6 @@
 			}, {
 				"name": "#elm IRC Channel on Freenode",
 				"url": "http://webchat.freenode.net/?channels=elm"
-			}]
-		}]
-	},
-	"batman": {
-		"name": "Batman.js",
-		"description": "A client-side framework for Rails developers. Batman.js is a framework for building rich web applications with CoffeeScript.",
-		"homepage": "batmanjs.org",
-		"examples": [{
-			"name": "Example",
-			"url": "examples/batman"
-		}],
-		"link_groups": [{
-			"heading": "Official Resources",
-			"links": [{
-				"name": "Documentation",
-				"url": "http://batmanjs.org/docs/batman.html"
-			}, {
-				"name": "Get Started",
-				"url": "http://batmanjs.org/download.html"
-			}, {
-				"name": "Applications built with Batman.js",
-				"url": "http://batmanjs.org/examples.html"
-			}, {
-				"name": "Blog",
-				"url": "http://batmanjs.org/2012/04/02/batman-packs-a-punch.html"
-			}, {
-				"name": "Batman.js on GitHub",
-				"url": "https://github.com/shopify/batman"
-			}]
-		}, {
-			"heading": "Articles and Guides",
-			"links": [{
-				"name": "Simple address book app with Batman.js",
-				"url": "http://kubyshkin.ru/posts/simple-address-book-app-with-batman-js.html"
-			}, {
-				"name": "Batman.js vs Knockout.js",
-				"url": "http://blog.erlware.org/2011/08/28/batman-js-vs-knockout-js"
-			}]
-		}, {
-			"heading": "Community",
-			"links": [{
-				"name": "Batman.js on Stack Overflow",
-				"url": "http://stackoverflow.com/questions/tagged/batman.js"
-			}, {
-				"name": "Mailing list on Google Groups",
-				"url": "https://groups.google.com/forum/?fromgroups#!forum/batmanjs"
-			}, {
-				"name": "Batman.js on Twitter",
-				"url": "http://twitter.com/batmanjs"
 			}]
 		}]
 	},
@@ -775,7 +760,7 @@
 			"heading": "Articles and Guides",
 			"links": [{
 				"name": "Getting StartED with Dojo",
-				"url": "http://startdojo.com"
+				"url": "http://dojotoolkit.org/documentation/tutorials/1.10/start/"
 			}]
 		}, {
 			"heading": "Community",
@@ -1628,31 +1613,6 @@
 			}, {
 				"name": "Olives.js on GitHub",
 				"url": "https://github.com/flams/olives"
-			}]
-		}]
-	},
-	"plastronjs": {
-		"name": "PlastronJS",
-		"description": "PlastronJS is an MVC library which uses the Google Closure library for use with the Closure Compiler.",
-		"homepage": "rhysbrettbowen.github.io/PlastronJS",
-		"examples": [{
-			"name": "Example",
-			"url": "examples/plastronjs"
-		}],
-		"link_groups": [{
-			"heading": "Official Resources",
-			"links": [{
-				"name": "PlastronJS on GitHub",
-				"url": "https://github.com/rhysbrettbowen/PlastronJS"
-			}]
-		}, {
-			"heading": "Articles and Guides",
-			"links": [{
-				"name": "The Future of PlastronJS",
-				"url": "http://modernjavascript.blogspot.com/2012/11/the-future-of-plastronjs.html"
-			}, {
-				"name": "Krisztian Toth's JavaScript Games, XRegExp, PlastronJS",
-				"url": "http://dailyjs.com/2012/04/06/toth-xregexp-plastron"
 			}]
 		}]
 	},
